@@ -1,6 +1,14 @@
 .app {
+  display: flex;
+  justify-content: center;
   color: #333333;
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
   .container {
+    width: 1040px;
+    .link {
+      text-decoration: none;
+      color: inherit;
+    }
     .auth {
       display: flex;
       height: 100vh;
@@ -46,11 +54,32 @@
       .container {
         display: flex;
         padding: 10px, 0;
+        align-items: center;
         justify-content: space-between;
-      }
-      .link {
-        text-decoration: none;
-        color: inherit;
+        .logo {
+          img {
+            width: 120px;
+          }
+        }
+        .links {
+          display: flex;
+          gap: 10px;
+          h4 {
+            cursor: pointer;
+            transition: color 0.3s ease-in-out;
+            font-size: 18px;
+            font-weight: 400;
+          }
+          .write {
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ff69b4;
+          }
+        }
       }
     }
   }
