@@ -43,7 +43,7 @@ function Home() {
             </div>
             <div className="content">
               <Link to={`post/${post.id}`}>
-                <h1>{post.title}</h1>
+                <h1 className="link">{post.title}</h1>
               </Link>
               <p>{post.desc}</p>
               <button>Read more</button>

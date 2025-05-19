@@ -23,7 +23,7 @@
         sans-serif;
       flex-direction: column;
       h2 {
-        //color: #ff69b4;
+        //color: #ffc0cb;
         font-size: 20px;
       }
 
@@ -86,9 +86,9 @@
             background-color: #ffc0cb;
             font-weight: 100;
             &:hover {
-              border: 1px solid #ff69b4;
+              border: 1px solid #ffc0cb;
               background-color: #ffffff;
-              color: #ff69b4;
+              color: #ffc0cb;
             }
           }
         }
@@ -117,6 +117,18 @@
         }
         .img {
           flex: 2;
+          position: relative;
+          &::after {
+            // The background square
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: #ffc0cb;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: -1;
+          }
           img {
             width: 100%;
             max-height: 400px;
@@ -128,8 +140,70 @@
           display: flex;
           flex-direction: column;
           justify-content: space-between;
+
+          h1 {
+            text-decoration: none;
+            font-size: 35px;
+          }
+          p {
+            font-size: 18px;
+          }
+          button {
+            width: max-content;
+            cursor: pointer;
+            background-color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border: 2px solid #ffc0cb;
+            color: #ffc0cb;
+
+            &:hover {
+              background-color: #ffc0cb;
+              color: #ffffff;
+            }
+          }
         }
       }
     }
+  }
+}
+// SINGLE
+
+.single {
+  display: flex;
+  gap: 50px;
+  .content {
+    flex: 5;
+    img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 10px;
+      img {
+        //circle
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+    .edit {
+      display: flex;
+      gap: 5px;
+      .icons {
+        background-color: rgb(68, 164, 84);
+        width: max-content;
+        padding: 5px;
+        height: 20px;
+      }
+    }
+  }
+  .menu {
+    flex: 2;
   }
 }

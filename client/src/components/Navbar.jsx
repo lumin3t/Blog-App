@@ -1,11 +1,11 @@
 //import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../images/logo.png";
+//import logo from "../images/logo.png";
 function Navbar() {
   return (
     <div className="navbar">
       <div className="container">
-        <div>{<img src={logo}></img>}</div>
+        <div>{<img /*src={logo}*/></img>}</div>
         <div className="links">
           <Link to="/?cat=art" className="link">
             <h4>Art</h4>
