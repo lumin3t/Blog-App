@@ -1,5 +1,7 @@
 //import React from "react";
 import { Link } from "react-router-dom";
+import Menu from "../components/Menu.jsx";
+
 function Single() {
   return (
     <>
@@ -28,7 +30,7 @@ function Single() {
             dawue706qtfwvhei nbw6 ftevhbawt6
           </p>
         </div>
-        <div className="menu">m</div>
+        <Menu />
       </div>
     </>
   );
